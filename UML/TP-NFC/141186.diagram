@@ -1,0 +1,77 @@
+format 215
+
+subject 128130 "Where is my pet"
+  xyzwh 192 37 2000 405 465
+usecasecanvas 128386 usecase_ref 128002 // Se connecter
+  xyzwh 266 87 3005 91 41 label_xy 279 99
+end
+usecasecanvas 129154 usecase_ref 128130 // S'inscrire
+  xyzwh 436 85 3005 91 37 label_xy 458 95
+end
+usecasecanvas 130306 usecase_ref 128386 // Supprimer un animal
+  xyzwh 248 420 3005 121 43 label_xy 259 433
+end
+usecasecanvas 130434 usecase_ref 128514 // Signaler animal perdu 
+  xyzwh 362 364 3005 119 41 label_xy 368 375
+end
+usecasecanvas 130562 usecase_ref 128642 // Modifier animal
+  xyzwh 346 297 3005 119 43 label_xy 371 309
+end
+usecasecanvas 130690 usecase_ref 128770 // Scanner animal (vérifier)
+  xyzwh 319 159 3005 149 51 label_xy 332 176
+end
+usecasecanvas 130818 usecase_ref 128898 // Enregistrer animal
+  xyzwh 339 230 3005 121 45 label_xy 357 242
+end
+classcanvas 131330 class_ref 148610 // User
+  simpleclassdiagramsettings end
+  xyz 42 185 2000
+end
+classcanvas 131458 class_ref 148738 // Owner
+  simpleclassdiagramsettings end
+  xyz 43 333 2000
+end
+usecasecanvas 132866 usecase_ref 129026 // Animal retrouver
+  xyzwh 484 422 3005 101 41 label_xy 493 435
+end
+classcanvas 133122 class_ref 148866 // NFC
+  simpleclassdiagramsettings class_drawing_mode class end
+  xyz 651 194 2000
+end
+classcanvas 133634 class_ref 148994 // Guest
+  simpleclassdiagramsettings end
+  xyz 44 35 2000
+end
+relationcanvas 131586 relation_ref 142594 // <generalisation>
+  from ref 131458 z 2001 to ref 131330
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+line 132098 ----
+  from ref 131330 z 3006 to ref 130690
+line 132354 ----
+  from ref 131458 z 3006 to ref 130434
+line 132482 ----
+  from ref 131458 z 3006 to ref 130562
+line 132610 ---- decenter_end 246
+  from ref 131458 z 3006 to ref 130306
+line 132738 ----
+  from ref 131330 z 3006 to ref 130818
+simplerelationcanvas 132994 simplerelation_ref 128002
+  from ref 130434 z 3006 stereotype "<<extend>>" xyz 450 412 3000 to ref 132866
+end
+line 133250 ----
+  from ref 133122 z 3006 to ref 130690
+line 133378 ----
+  from ref 130818 z 3006 to ref 133122
+line 133762 ----
+  from ref 133634 z 3006 to ref 128386
+line 133890 ----
+  from ref 133634 z 3006 to point 405 65
+  line 134274 z 3006 to ref 129154
+relationcanvas 134146 relation_ref 142722 // <generalisation>
+  from ref 131330 z 2001 to ref 133634
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+end
