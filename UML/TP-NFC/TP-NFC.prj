@@ -1,7 +1,7 @@
-format 215
+format 216
 "TP-NFC"
-  revision 4
-  modified_by 2 "lr706510"
+  revision 5
+  modified_by 2 "rlembo"
 
 
   
@@ -610,8 +610,6 @@ ${members}}
 	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${stereotype}<${type}> ${name}${value};
 "
 	    classrelation_ref 128130 // <association>
-	get_oper operation_ref 130050 // get_owner
-	set_oper operation_ref 130178 // set_owner
       end
 
       classrelation 128770 // <unidirectional association>
@@ -1650,6 +1648,21 @@ ${members}}
     end
 
     sequencediagram 141314 "scanner"
+      sequencediagramsettings end
+      overlapping_bars size A4
+    end
+
+    sequencediagram 147842 "connection"
+      sequencediagramsettings end
+      overlapping_bars size A4
+    end
+
+    sequencediagram 147970 "create_animal"
+      sequencediagramsettings end
+      overlapping_bars size A4
+    end
+
+    sequencediagram 148098 "update_animal"
       sequencediagramsettings end
       overlapping_bars size A4
     end
