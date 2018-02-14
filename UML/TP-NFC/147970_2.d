@@ -14,7 +14,7 @@ textcanvas 128514 "[check_animal = 1]"
 classinstance 128770 class_ref 148738 // Owner
   drawing_mode actor  name ""   xyz 32 11 2000 life_line_z 2000
 textcanvas 130434 "[check_animal = 3]"
-  xyzwh 216 440.5 2005 150 17
+  xyzwh 216 440 2005 150 17
 fragment 130818 "alt"
   xyzwh 166 316 1980 237 104
 end
@@ -22,7 +22,7 @@ fragment 131074 "alt"
   xyzwh 166.5 420.5 2010 236 105
 end
 textcanvas 131202 "[check_animal = 2]"
-  xyzwh 219 331.5 2005 264 17
+  xyzwh 219 331 2005 264 17
 durationcanvas 129026 classinstance_ref 128002 // :Interface
   xyzwh 188 261 2010 11 29
 end
