@@ -1,9 +1,12 @@
 window_sizes 1920 1017 203 1712 867 104
 
+diagrams
+  active  usecasediagram_ref 141186 // diag
+    1369 693 100 A4 0 0
+end
 show_stereotypes
-selected sequencediagram_ref 148098 // update_animal
+selected classdiagram_ref 128002 // class
 open
-  usecaseview_ref 128002 // seq
-  usecaseview_ref 134530 // use case
+  classview_ref 128002 // Class view
 end
 end
