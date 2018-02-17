@@ -1,6 +1,6 @@
 format 216
 "TP-NFC"
-  revision 6
+  revision 8
   modified_by 2 "moh"
 
 
@@ -1658,6 +1658,11 @@ ${members}}
     end
 
     sequencediagram 147970 "SupprimerUnAnimalSystem"
+      sequencediagramsettings end
+      overlapping_bars size A4
+    end
+
+    sequencediagram 154498 "AnimalRetrouvé"
       sequencediagramsettings end
       overlapping_bars size A4
     end

@@ -1,17 +1,15 @@
-window_sizes 1141 1008 244 892 858 104
+window_sizes 1920 1017 244 1671 867 104
 
 diagrams
-  usecasediagram_ref 141186 // diag
-    709 858 100 A4 0 0
   sequencediagram_ref 147842 // SignalerAnimalPerduSystem
-    829 394 200 A4 41 68
-  sequencediagram_ref 147970 // SupprimerUnAnimalSystem
-    731 386 100 A4 0 0
-  active  classdiagram_ref 128002 // class
+    829 394 200 A4 0 28
+  classdiagram_ref 128002 // class
     892 858 100 A4 0 0
+  active  sequencediagram_ref 154498 // AnimalRetrouvé
+    1671 867 189 A4 0 0
 end
 show_stereotypes
-selected classdiagram_ref 128002 // class
+selected sequencediagram_ref 154498 // AnimalRetrouvé
 open
   classview_ref 128002 // Class view
   usecaseview_ref 128002 // seq
