@@ -1,6 +1,6 @@
 format 216
 "TP-NFC"
-  revision 9
+  revision 10
   modified_by 2 "moh"
 
 
@@ -1567,7 +1567,6 @@ ${members}}
 	  b parent class_ref 148610 // User
       end
     end
-
   end
 
   usecaseview 128002 "seq"
@@ -1931,13 +1930,112 @@ ${members}}
       explicit_switch_type ""
       mysql_decl ""
       
-      classrelation 150018 // <unidirectional association>
-	relation 149250 --->
-	  a role_name "" multiplicity "*" private
-	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${stereotype}<${type}> ${name}${value};
+      attribute 159106 "id"
+	private explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
 "
-	    classrelation_ref 150018 // <unidirectional association>
-	  b parent class_ref 155778 // User_Animal
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 159234 "firstname"
+	private explicit_type "varchar"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 159362 "lastname"
+	private explicit_type "varchar"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 159490 "adress"
+	private explicit_type "varchar"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 159618 "city"
+	private explicit_type "varchar"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 159746 "cp"
+	private explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 159874 "country"
+	private explicit_type "varchar"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 160002 "password"
+	private explicit_type "varchar"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 160130 "email"
+	private explicit_type "varchar"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
       end
     end
 
@@ -1953,22 +2051,28 @@ ${members}}
       explicit_switch_type ""
       mysql_decl ""
       
-      classrelation 150146 // <unidirectional association>
-	relation 149378 --->
-	  a role_name "" multiplicity "*" private
-	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${stereotype}<${type}> ${name}${value};
+      attribute 158338 "id"
+	private explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
 "
-	    classrelation_ref 150146 // <unidirectional association>
-	  b parent class_ref 155778 // User_Animal
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
       end
 
-      classrelation 150274 // <unidirectional association>
-	relation 149506 --->
-	  a role_name "" multiplicity "*" private
-	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${stereotype}<${type}> ${name}${value};
+      attribute 158466 "nfc_id"
+	private explicit_type "varchar"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
 "
-	    classrelation_ref 150274 // <unidirectional association>
-	  b parent class_ref 155906 // Animal_Photo
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
       end
 
       classrelation 150530 // <unidirectional association>
@@ -1982,6 +2086,54 @@ ${members}}
 
       attribute 151170 "kind_id"
 	private explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 158594 "name"
+	private explicit_type "varchar"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 158722 "sexe"
+	private explicit_type "char"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 158850 "born"
+	private explicit_type "datetime"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 158978 "status"
+	private explicit_type "varchar"
 	cpp_decl ""
 	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
 "
@@ -2040,6 +2192,24 @@ ${members}}
 	mysql_decl ""
 	MysqlColumn
       end
+
+      classrelation 157442 // <unidirectional association>
+	relation 156674 --->
+	  a role_name "" multiplicity "*" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${stereotype}<${type}> ${name}${value};
+"
+	    classrelation_ref 157442 // <unidirectional association>
+	  b parent class_ref 155650 // Animal
+      end
+
+      classrelation 157570 // <unidirectional association>
+	relation 156802 --->
+	  a role_name "" multiplicity "*" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${stereotype}<${type}> ${name}${value};
+"
+	    classrelation_ref 157570 // <unidirectional association>
+	  b parent class_ref 155522 // User
+      end
     end
 
     class 155906 "Animal_Photo"
@@ -2089,6 +2259,24 @@ ${members}}
 	mysql_decl ""
 	MysqlColumn
       end
+
+      classrelation 157186 // <unidirectional association>
+	relation 156418 --->
+	  a role_name "" multiplicity "*" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${stereotype}<${type}> ${name}${value};
+"
+	    classrelation_ref 157186 // <unidirectional association>
+	  b parent class_ref 156034 // Photo
+      end
+
+      classrelation 157314 // <unidirectional association>
+	relation 156546 --->
+	  a role_name "" multiplicity "*" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${stereotype}<${type}> ${name}${value};
+"
+	    classrelation_ref 157314 // <unidirectional association>
+	  b parent class_ref 155650 // Animal
+      end
     end
 
     class 156034 "Photo"
@@ -2103,13 +2291,28 @@ ${members}}
       explicit_switch_type ""
       mysql_decl ""
       
-      classrelation 150402 // <unidirectional association>
-	relation 149634 --->
-	  a role_name "" multiplicity "*" private
-	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${stereotype}<${type}> ${name}${value};
+      attribute 158082 "id"
+	private explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
 "
-	    classrelation_ref 150402 // <unidirectional association>
-	  b parent class_ref 155906 // Animal_Photo
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 158210 "file"
+	private explicit_type "longblob"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
       end
     end
 

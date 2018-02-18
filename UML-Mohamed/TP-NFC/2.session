@@ -7,11 +7,13 @@ diagrams
     717 693 100 A4 0 0
 end
 show_stereotypes
-selected attribute_ref 151554 // date
+selected attribute_ref 160130 // email
 open
-  class_ref 155650 // Animal
+  class_ref 155522 // User
+  attribute_ref 158338 // id
   class_ref 155778 // User_Animal
   class_ref 155906 // Animal_Photo
+  class_ref 156034 // Photo
   class_ref 156290 // Lost
 end
 end
