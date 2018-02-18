@@ -1,0 +1,10 @@
+window_sizes 1800 922 450 1344 766 104
+cleanlooks_style
+show_stereotypes
+selected classdiagram_ref 128002 // class
+open
+  classview_ref 128002 // Class view
+  usecaseview_ref 128002 // seq
+  usecaseview_ref 134530 // use case
+end
+end
