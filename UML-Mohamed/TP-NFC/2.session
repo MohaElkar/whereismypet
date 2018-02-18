@@ -1,0 +1,17 @@
+window_sizes 1908 1017 244 1659 867 104
+
+diagrams
+  classdiagram_ref 128002 // class
+    892 858 100 A4 0 0
+  active  classdiagram_ref 161154 // mcd
+    717 693 100 A4 0 0
+end
+show_stereotypes
+selected attribute_ref 151554 // date
+open
+  class_ref 155650 // Animal
+  class_ref 155778 // User_Animal
+  class_ref 155906 // Animal_Photo
+  class_ref 156290 // Lost
+end
+end

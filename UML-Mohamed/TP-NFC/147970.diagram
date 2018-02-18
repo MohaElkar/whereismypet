@@ -1,0 +1,69 @@
+format 216
+
+classinstance 128258 class_ref 141570 // System
+  name ""   xyz 535 4 2000 life_line_z 2000
+classinstance 128386 class_ref 148738 // Owner
+  drawing_mode actor  name ""   xyz 142 4 2000 life_line_z 2000
+durationcanvas 128514 classinstance_ref 128386 // :Owner
+  xyzwh 157 146 2010 11 50
+end
+durationcanvas 128642 classinstance_ref 128258 // :System
+  xyzwh 555 146 2010 11 50
+end
+durationcanvas 128770 classinstance_ref 128258 // :System
+  xyzwh 555 227 2010 11 53
+  overlappingdurationcanvas 128898
+    xyzwh 561 240 2020 11 25
+  end
+end
+durationcanvas 129026 classinstance_ref 128258 // :System
+  xyzwh 555 67 2010 11 54
+end
+durationcanvas 129154 classinstance_ref 128386 // :Owner
+  xyzwh 157 67 2010 11 49
+end
+durationcanvas 129282 classinstance_ref 128386 // :Owner
+  xyzwh 157 230 2010 11 50
+end
+reflexivemsg 129410 synchronous
+  to durationcanvas_ref 128898
+  yz 240 2025 explicitmsg "Traitement de la demande de suppression"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 598 237
+msg 129538 synchronous
+  from durationcanvas_ref 129154
+  to durationcanvas_ref 129026
+  yz 68 2015 explicitmsg "Mes animaux"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 331 53
+msg 129666 return
+  from durationcanvas_ref 128770
+  to durationcanvas_ref 129282
+  yz 269 2015 explicitmsg "Animal supprimé"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 311 254
+msg 129794 synchronous
+  from durationcanvas_ref 128514
+  to durationcanvas_ref 128642
+  yz 147 2015 explicitmsg "Selection animal à supprimer"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 298 131
+msg 129922 return
+  from durationcanvas_ref 128642
+  to durationcanvas_ref 128514
+  yz 185 2015 explicitmsg "Animal selectionné"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 325 169
+msg 130050 synchronous
+  from durationcanvas_ref 129282
+  to durationcanvas_ref 128770
+  yz 230 2015 explicitmsg "Supprimer l'animal <<validation>>"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 282 215
+msg 130178 return
+  from durationcanvas_ref 129026
+  to durationcanvas_ref 129154
+  yz 105 2015 explicitmsg "Liste animaux"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 329 90
+end

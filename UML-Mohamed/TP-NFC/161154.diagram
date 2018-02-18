@@ -1,0 +1,61 @@
+format 216
+
+classcanvas 128258 class_ref 155522 // User
+  classdiagramsettings member_max_width 0 end
+  xyz 104 57 2000
+end
+classcanvas 128386 class_ref 155650 // Animal
+  classdiagramsettings member_max_width 0 end
+  xyz 361 53 2000
+end
+classcanvas 128514 class_ref 155778 // User_Animal
+  classdiagramsettings member_max_width 0 end
+  xyz 200 118 2005
+end
+classcanvas 128898 class_ref 155906 // Animal_Photo
+  classdiagramsettings member_max_width 0 end
+  xyz 480 119 2000
+end
+classcanvas 129282 class_ref 156034 // Photo
+  classdiagramsettings member_max_width 0 end
+  xyz 610 53 2000
+end
+classcanvas 129666 class_ref 156162 // Kind
+  classdiagramsettings member_max_width 0 end
+  xyz 363 190 2000
+end
+classcanvas 129922 class_ref 156290 // Lost
+  classdiagramsettings member_max_width 0 end
+  xyz 228 256 2000
+end
+relationcanvas 128642 relation_ref 149250 // <unidirectional association>
+  from ref 128258 z 2006 to ref 128514
+  no_role_a no_role_b
+  multiplicity_a_pos 185 139 3000 no_multiplicity_b
+end
+relationcanvas 128770 relation_ref 149378 // <unidirectional association>
+  from ref 128386 z 2006 to ref 128514
+  no_role_a no_role_b
+  multiplicity_a_pos 298 134 3000 no_multiplicity_b
+end
+relationcanvas 129410 relation_ref 149506 // <unidirectional association>
+  from ref 128386 z 2001 to ref 128898
+  no_role_a no_role_b
+  multiplicity_a_pos 465 142 3000 no_multiplicity_b
+end
+relationcanvas 129538 relation_ref 149634 // <unidirectional association>
+  from ref 129282 z 2001 to ref 128898
+  no_role_a no_role_b
+  multiplicity_a_pos 578 119 3000 no_multiplicity_b
+end
+relationcanvas 129794 relation_ref 149762 // <unidirectional association>
+  from ref 128386 z 2001 to ref 129666
+  no_role_a no_role_b
+  multiplicity_a_pos 370 171 3000 no_multiplicity_b
+end
+relationcanvas 130050 relation_ref 149890 // <unidirectional association>
+  from ref 129922 z 2001 to ref 128386
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+end
