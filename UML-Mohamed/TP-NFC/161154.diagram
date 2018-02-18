@@ -2,39 +2,39 @@ format 216
 
 classcanvas 128258 class_ref 155522 // User
   classdiagramsettings member_max_width 0 end
-  xyz 42.4 150.9 2000
+  xyz 40 40 2000
 end
 classcanvas 128386 class_ref 155650 // Animal
   classdiagramsettings member_max_width 0 end
-  xyz 200.6 330.7 2000
+  xyz 194 256 2000
 end
 classcanvas 128514 class_ref 155778 // User_Animal
   classdiagramsettings member_max_width 0 end
-  xyz 54.5 366.6 2005
+  xyz 201 88 2005
 end
 classcanvas 128898 class_ref 155906 // Animal_Photo
   classdiagramsettings member_max_width 0 end
-  xyz 206.6 39 2000
+  xyz 57 288 2000
 end
 classcanvas 129282 class_ref 156034 // Photo
   classdiagramsettings member_max_width 0 end
-  xyz 86.7 47 2000
+  xyz 57 408 2000
 end
 classcanvas 129666 class_ref 156162 // Kind
   classdiagramsettings member_max_width 0 end
-  xyz 228.6 516.3 2000
+  xyz 336 296 2000
 end
 classcanvas 129922 class_ref 156290 // Lost
   classdiagramsettings member_max_width 0 end
-  xyz 336.2 366.6 2000
+  xyz 203 440 2000
 end
 relationcanvas 129794 relation_ref 149762 // <unidirectional association>
   from ref 128386 z 2001 to ref 129666
   no_role_a no_role_b
-  multiplicity_a_pos 234 497 3000 no_multiplicity_b
+  no_multiplicity_a no_multiplicity_b
 end
 relationcanvas 130050 relation_ref 149890 // <unidirectional association>
-  decenter_end 531
+  decenter_end 533
   from ref 129922 z 2001 to ref 128386
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
@@ -42,22 +42,22 @@ end
 relationcanvas 130178 relation_ref 156418 // <unidirectional association>
   from ref 128898 z 2001 to ref 129282
   no_role_a no_role_b
-  multiplicity_a_pos 182 91 3000 no_multiplicity_b
+  no_multiplicity_a no_multiplicity_b
 end
 relationcanvas 130306 relation_ref 156546 // <unidirectional association>
   from ref 128898 z 2001 to ref 128386
   no_role_a no_role_b
-  multiplicity_a_pos 236 311 3000 no_multiplicity_b
+  no_multiplicity_a no_multiplicity_b
 end
 relationcanvas 130434 relation_ref 156674 // <unidirectional association>
+  decenter_end 533
   from ref 128514 z 2006 to ref 128386
   no_role_a no_role_b
-  multiplicity_a_pos 185 409 3000 no_multiplicity_b
+  no_multiplicity_a no_multiplicity_b
 end
 relationcanvas 130562 relation_ref 156802 // <unidirectional association>
-  decenter_begin 538
   from ref 128514 z 2006 to ref 128258
   no_role_a no_role_b
-  multiplicity_a_pos 87 333 3000 no_multiplicity_b
+  no_multiplicity_a no_multiplicity_b
 end
 end

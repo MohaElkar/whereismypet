@@ -1,6 +1,6 @@
 format 216
 "TP-NFC"
-  revision 10
+  revision 11
   modified_by 2 "moh"
 
 
@@ -1931,7 +1931,7 @@ ${members}}
       mysql_decl ""
       
       attribute 159106 "id"
-	private explicit_type "int"
+	unique private explicit_type "int"
 	cpp_decl ""
 	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
 "
@@ -2052,7 +2052,7 @@ ${members}}
       mysql_decl ""
       
       attribute 158338 "id"
-	private explicit_type "int"
+	unique private explicit_type "int"
 	cpp_decl ""
 	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
 "
@@ -2077,7 +2077,7 @@ ${members}}
 
       classrelation 150530 // <unidirectional association>
 	relation 149762 --->
-	  a role_name "" multiplicity "1" private
+	  a role_name "" private
 	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
 "
 	    classrelation_ref 150530 // <unidirectional association>
@@ -2158,7 +2158,7 @@ ${members}}
       mysql_decl ""
       
       attribute 150402 "id"
-	private explicit_type "int"
+	unique private explicit_type "int"
 	cpp_decl ""
 	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
 "
@@ -2195,8 +2195,8 @@ ${members}}
 
       classrelation 157442 // <unidirectional association>
 	relation 156674 --->
-	  a role_name "" multiplicity "*" private
-	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${stereotype}<${type}> ${name}${value};
+	  a role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
 "
 	    classrelation_ref 157442 // <unidirectional association>
 	  b parent class_ref 155650 // Animal
@@ -2204,8 +2204,8 @@ ${members}}
 
       classrelation 157570 // <unidirectional association>
 	relation 156802 --->
-	  a role_name "" multiplicity "*" private
-	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${stereotype}<${type}> ${name}${value};
+	  a role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
 "
 	    classrelation_ref 157570 // <unidirectional association>
 	  b parent class_ref 155522 // User
@@ -2225,7 +2225,7 @@ ${members}}
       mysql_decl ""
       
       attribute 150786 "id"
-	private explicit_type "int"
+	unique private explicit_type "int"
 	cpp_decl ""
 	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
 "
@@ -2262,8 +2262,8 @@ ${members}}
 
       classrelation 157186 // <unidirectional association>
 	relation 156418 --->
-	  a role_name "" multiplicity "*" private
-	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${stereotype}<${type}> ${name}${value};
+	  a role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
 "
 	    classrelation_ref 157186 // <unidirectional association>
 	  b parent class_ref 156034 // Photo
@@ -2271,8 +2271,8 @@ ${members}}
 
       classrelation 157314 // <unidirectional association>
 	relation 156546 --->
-	  a role_name "" multiplicity "*" private
-	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${stereotype}<${type}> ${name}${value};
+	  a role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
 "
 	    classrelation_ref 157314 // <unidirectional association>
 	  b parent class_ref 155650 // Animal
@@ -2292,7 +2292,7 @@ ${members}}
       mysql_decl ""
       
       attribute 158082 "id"
-	private explicit_type "int"
+	unique private explicit_type "int"
 	cpp_decl ""
 	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
 "
@@ -2328,6 +2328,29 @@ ${members}}
       explicit_switch_type ""
       mysql_decl ""
       
+      attribute 166658 "id"
+	unique private explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 166786 "name"
+	private explicit_type "varchar"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
     end
 
     class 156290 "Lost"
@@ -2343,7 +2366,7 @@ ${members}}
       mysql_decl ""
       
       attribute 151298 "id"
-	private explicit_type "int"
+	unique private explicit_type "int"
 	cpp_decl ""
 	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
 "
