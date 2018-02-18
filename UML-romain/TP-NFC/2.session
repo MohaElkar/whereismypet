@@ -1,0 +1,12 @@
+window_sizes 1920 1017 203 1712 867 104
+
+diagrams
+  active  usecasediagram_ref 141186 // diag
+    1369 693 100 A4 0 0
+end
+show_stereotypes
+selected classdiagram_ref 128002 // class
+open
+  classview_ref 128002 // Class view
+end
+end
